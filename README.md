@@ -71,7 +71,7 @@ Then reload the nginx config
           },
           onSubmit: function(e) {
             // Insert content when the window form is submitted
-            editor.insertContent(`<iframe id="pdf-viewer" title="PDF viwer" src="/pdfjs/web/viewer.html?file=${e.getData().pdfurl}" width="100%" height="450vh"></iframe>`);
+            editor.insertContent(`<iframe id="pdf-viewer" title="PDF viwer" src="/pdfjs/web/viewer.html?file=${e.getData().pdfurl}" style="width:100%; height:500px; background-color: #fff; box-shadow: 0 4px 8px -1px rgba(0,0,0,.2); border-radius: 8px; border: 0px solid transparent;" ></iframe>`);
             e.close();
           },
           buttons: [
@@ -85,6 +85,7 @@ Then reload the nginx config
     });
 
   });
+
 </script>
 ```
 #### Insert PDF Button
